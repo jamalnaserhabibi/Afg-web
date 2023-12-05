@@ -36,14 +36,18 @@
     }
     @media screen and (max-width: 768px) {
       .navBar {
-        background-color: var(--greyBg);
+        background: linear-gradient(
+          rgba(33, 33, 33, 0.5),
+          rgba(33, 33, 33, 0.5)
+        );
         position: absolute;
+        backdrop-filter: blur(10px);
         height: max-content;
         padding: 1rem;
         width: 100%;
         top: 0;
         left: 500%;
-        box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+        // box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
         transition: 0.3 ease;
         z-index: 1000;
         .navLists {
@@ -54,7 +58,7 @@
           .navItem {
             padding: 0.5rem 0;
             .navLink {
-              color: var(--textColor);
+              color: rgba(255, 255, 255, 0.754);
               font-size: 0.9rem;
               font-weight: 600;
               &:hover {

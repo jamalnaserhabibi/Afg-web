@@ -9,9 +9,11 @@
   --greyText: rgba(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
 }
+
 .homeText {
   text-align: center;
 }
+
 .home {
   height: 70vh;
   background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)),
@@ -25,35 +27,49 @@
   align-content: center;
   margin: auto;
 }
+
 .title,
 .subTitle {
   color: var(--whiteColor);
   text-align: center;
 }
+
 .title {
   font-size: 2rem;
   line-height: 2.4rem;
+  padding: 2rem 0rem;
 }
+
 .subTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   opacity: 0.9;
-  padding: 1rem 0;
-  font-size: 13px;
-  max-width: 70%;
+  padding: 1rem;
+  font-size: 15px;
+  // max-width: 70%;
   text-align: center;
 }
+
 .btn {
   padding: 0.6rem 1.5rem;
 }
+
 .homeCard {
   height: 40vh;
   width: 90%;
   border: 2px solid var(--PrimaryColor);
-  //   background-color: var(--PrimaryColor);
   position: absolute;
   justify-content: center;
   gap: 1rem;
   bottom: 6%;
   border-radius: 2rem;
 }
+
+@media screen and(max-width: 768px) {
+    // .title {
+ //   font-size: 3rem;
+ //   line-height: 2.4rem;
+ //   padding: 2rem 0rem;
+ // }
+
+  }

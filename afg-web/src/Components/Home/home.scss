@@ -15,7 +15,7 @@
 }
 
 .home {
-  height: 70vh;
+  height: 80vh;
   background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)),
     url("../../Assets/bgimage.jpg");
   background-repeat: no-repeat;
@@ -35,9 +35,9 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 3.4rem;
   line-height: 2.4rem;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .subTitle {
@@ -61,15 +61,12 @@
   position: absolute;
   justify-content: center;
   gap: 1rem;
-  bottom: 6%;
+  bottom: 3%;
   border-radius: 2rem;
 }
 
-@media screen and(max-width: 768px) {
-    // .title {
- //   font-size: 3rem;
- //   line-height: 2.4rem;
- //   padding: 2rem 0rem;
- // }
-
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
   }
+}

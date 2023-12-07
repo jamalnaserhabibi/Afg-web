@@ -21,7 +21,7 @@
   --inputColor: hsl(330, 12%, 97%);
 }
 
- a {
+a {
   text-decoration: none;
 }
 li {
@@ -91,4 +91,22 @@ video {
 
 input {
   font-size: 100%;
-} 
+}
+
+@media screen and (min-width: 564px) {
+  .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .mainContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1122px) {
+  .mainContent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

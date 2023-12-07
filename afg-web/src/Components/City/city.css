@@ -56,12 +56,12 @@
 }
 .city .secContainer .mainContent .singleDestination .destImage .overlaysInfo {
   width: 100%;
-  height: 100%;
+  height: 0;
   overflow: hidden;
   position: absolute;
   bottom: 0;
   display: flex;
-  padding: 1rem 1.5rem;
+  padding: 0;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -81,4 +81,46 @@
 .city .secContainer .mainContent .singleDestination .destImage .overlaysInfo .icon:hover {
   background-color: transparent;
   border: 2px solid var(--PrimaryColor);
+}
+.city .secContainer .mainContent .singleDestination .destFooter {
+  padding: 1rem;
+}
+.city .secContainer .mainContent .singleDestination .destFooter .number {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--blackColor);
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+.city .secContainer .mainContent .singleDestination .destFooter .number::after {
+  content: "";
+  position: absolute;
+  background-color: var(--PrimaryColor);
+  top: 45%;
+  right: -150%;
+  height: 5px;
+  width: 45px;
+  border-radius: 1rem;
+}
+.city .secContainer .mainContent .singleDestination .destFooter .destText {
+  justify-content: space-between;
+}
+.city .secContainer .mainContent .singleDestination .destFooter .destText h6 {
+  color: var(--blackColor);
+  font-size: 1.5rem;
+}
+.city .secContainer .mainContent .singleDestination .destFooter .destText .flex {
+  font-size: 20px;
+  align-items: flex-start;
+}
+.city .secContainer .mainContent .singleDestination .destFooter .destText .flex .icon {
+  color: var(--PrimaryColor);
+  font-size: 20px;
+  padding: 0 0.3rem;
+}
+.city .secContainer .mainContent .singleDestination:hover .overlaysInfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
 }/*# sourceMappingURL=city.css.map */

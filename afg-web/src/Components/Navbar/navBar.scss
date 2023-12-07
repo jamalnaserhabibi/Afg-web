@@ -202,4 +202,8 @@
       color: white;
     }
   }
+
+  .activeHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.771), var(--blackColor));
+  }
 }

@@ -11,9 +11,18 @@ const Navbar = () => {
   const removeNavBar = () => {
     setActive("navBar");
   };
+  const [transparent, setTransparent] = useState("header");
+  const addbg = () => {
+    if (window.scrollY >= 10) {
+      setTransparent("header activeHeader");
+    } else {
+      setTransparent("header ");
+    }
+  };
+  window.addEventListener("scroll", addbg);
   return (
     <section className="navBarSection">
-      <div className="header">
+      <div className={transparent}>
         <div className="logoDiv">
           <a href="#" className="logo">
             <h1 className="flex">

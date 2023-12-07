@@ -15,7 +15,7 @@
 }
 
 .home {
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)),
     url("../../Assets/bgimage.jpg");
   background-repeat: no-repeat;
@@ -54,19 +54,15 @@
   padding: 0.6rem 1.5rem;
 }
 
-.homeCard {
-  height: 40vh;
-  width: 90%;
-  border: 2px solid var(--PrimaryColor);
-  position: absolute;
-  justify-content: center;
-  gap: 1rem;
-  bottom: 3%;
-  border-radius: 2rem;
-}
 
 @media screen and (max-width: 768px) {
   .title {
     font-size: 2.5rem;
+    padding: 0rem 0rem;
+    margin-top: -2rem;
+  }
+
+  .subTitle {
+    margin: 0 -1.5rem;
   }
 }

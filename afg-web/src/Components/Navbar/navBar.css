@@ -161,4 +161,7 @@
 }
 .navBarSection .header .icon {
   color: white;
+}
+.navBarSection .activeHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.771), var(--blackColor));
 }/*# sourceMappingURL=navBar.css.map */

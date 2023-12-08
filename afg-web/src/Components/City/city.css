@@ -21,6 +21,9 @@
 .city .secContainer .secHeader .textDiv .secTitle {
   color: var(--blackColor);
 }
+.city .secContainer .secHeader .textDiv .secText {
+  font-size: 1.3rem;
+}
 .city .secContainer .secHeader .iconsDiv {
   gap: 0.5rem;
 }
@@ -39,7 +42,7 @@
 }
 .city .secContainer .mainContent .singleDestination {
   border-radius: 1rem;
-  box-shadow: 0 2px 8px 0 rgba(110, 110, 110, 0.45);
+  box-shadow: 0 2px 14px 0 rgba(110, 110, 110, 0.181);
   overflow: hidden;
 }
 .city .secContainer .mainContent .singleDestination .destImage {

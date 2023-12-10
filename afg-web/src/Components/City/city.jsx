@@ -52,7 +52,7 @@ const Data = [
 ];
 
 const city = () => {
-  Aos.init({ duration: 1000 }, []);
+  Aos.init({ duration: 500, delay: 0 }, []);
   return (
     <section className="city section container">
       <div className="secContainer">

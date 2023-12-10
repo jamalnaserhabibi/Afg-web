@@ -10,6 +10,31 @@
   --inputColor: hsl(330, 12%, 97%);
 }
 
+.totop {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  // display: none;
+  background-color: var(--PrimaryColor);
+  border-radius: 50%;
+
+  padding: .6rem;
+  font-size: .1rem;
+  z-index: 1000;
+
+  a {
+    color: white;
+  }
+
+  &:hover {
+    background-color: var(--HoverColor);
+  }
+}
+
+.activeToTop {
+  bottom: -150%;
+}
+
 .navBarSection {
   .header {
     position: fixed;
@@ -204,6 +229,7 @@
   }
 
   .activeHeader {
-    background: linear-gradient(rgba(0, 0, 0, 0.771), var(--blackColor));
+    display: none;
+    // background: linear-gradient(rgba(0, 0, 0, 0.771), var(--blackColor));
   }
 }

@@ -3,6 +3,8 @@ import "../Navbar/navBar.css";
 import { SiYourtraveldottv } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import { BsArrowUpShort } from "react-icons/bs";
+
 const Navbar = () => {
   const [active, setActive] = useState("navBar");
   const showNav = () => {
@@ -13,13 +15,25 @@ const Navbar = () => {
   };
   const [transparent, setTransparent] = useState("header");
   const addbg = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 20) {
       setTransparent("header activeHeader");
     } else {
       setTransparent("header ");
     }
   };
   window.addEventListener("scroll", addbg);
+
+  const [moveBtn, setMoveBtn] = useState("totop");
+
+  const scrollTop = () => {
+    if (window.scrollY >= 20) {
+      setMoveBtn("totop ");
+    } else {
+      setMoveBtn("totop activeToTop");
+    }
+  };
+  window.addEventListener("scroll", scrollTop);
+
   return (
     <section className="navBarSection">
       <div className={transparent}>
@@ -84,6 +98,11 @@ const Navbar = () => {
         <div onClick={showNav} className="toggleNavBar">
           <TbGridDots className="icon" />
         </div>
+      </div>
+      <div className={moveBtn}>
+        <a href="#home">
+          <BsArrowUpShort className="icon " />
+        </a>
       </div>
     </section>
   );

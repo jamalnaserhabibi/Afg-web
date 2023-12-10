@@ -52,9 +52,9 @@ const Data = [
 ];
 
 const city = () => {
-  Aos.init({ duration: 500, delay: 0 }, []);
+  Aos.init({ duration: 2000, delay: 0 }, []);
   return (
-    <section className="city section container">
+    <section id="city" className="city section container">
       <div className="secContainer">
         <div className="secHeader flex">
           <div data-aos="fade-up" className="textDiv">

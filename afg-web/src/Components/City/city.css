@@ -16,13 +16,15 @@
 .city .secContainer .secHeader {
   flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
 }
 .city .secContainer .secHeader .textDiv .secTitle {
   color: var(--blackColor);
+  font-size: 2rem;
 }
 .city .secContainer .secHeader .textDiv .secText {
   font-size: 1.3rem;
+  text-align: justify;
 }
 .city .secContainer .secHeader .iconsDiv {
   gap: 0.5rem;

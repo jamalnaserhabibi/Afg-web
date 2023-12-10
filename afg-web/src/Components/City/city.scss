@@ -17,16 +17,18 @@
         .secHeader {
             flex-direction: column;
             align-items: flex-start;
-            gap: 2rem;
+            gap: 1rem;
 
             .textDiv {
                 .secTitle {
                     color: var(--blackColor);
+                    font-size: 2rem;
 
                 }
 
                 .secText {
                     font-size: 1.3rem;
+                    text-align: justify;
                 }
             }
 

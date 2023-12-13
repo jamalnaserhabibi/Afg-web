@@ -16,6 +16,7 @@
   right: 1.5rem;
   background-color: var(--PrimaryColor);
   border-radius: 50%;
+  box-shadow: 0 2px 24px 12px rgba(0, 0, 0, 0.348);
   padding: 0.6rem;
   font-size: 0.1rem;
   z-index: 1000;

@@ -9,3 +9,156 @@
     --greyText: rgba(190, 190, 190);
     --inputColor: hsl(330, 12%, 97%);
 }
+
+
+.secIntro {
+    flex-direction: column;
+    // gap: 1rem;
+    margin: 1rem;
+
+    .secTitle {
+        color: var(--blackColor);
+        font-size: 2rem;
+
+
+    }
+
+    .secText {
+        font-size: 1rem;
+        text-align: justify;
+
+    }
+}
+
+.tourist {
+    // margin-top: -3rem;
+
+    .secContainer {
+
+        .mainContent {
+            // margin-top: 3rem;
+            gap: 1rem;
+
+            .singleOffer {
+                box-shadow: 0 2px 14px 0 rgba(110, 110, 110, 0.314);
+                overflow: hidden;
+                border-radius: 1rem;
+                padding: .5rem;
+
+                .icon {
+                    font-size: 30px;
+                    color: var(--textColor);
+                }
+
+                small {
+                    font-weight: 500;
+                    color: var(--textColor);
+                }
+
+                .destImage {
+                    position: relative;
+                    height: 200px;
+                    width: 100%;
+                    border-radius: 1rem;
+                    overflow: hidden;
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .location {
+                    background-color: var(--PrimaryColor);
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    padding: 5px 10px;
+                    color: var(--whiteColor);
+                    border-radius: 3rem;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+
+                &:hover {
+                    box-shadow: 0 2px 14px 0 rgba(110, 110, 110, 0.648);
+
+                }
+            }
+
+            .offerBody {
+                padding: 0.5rem 1rem;
+
+                .price {
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+
+                    h4 {
+                        color: var(--blackColor);
+                        // font-weight: 500;
+                    }
+
+                    .status {
+                        background-color: var(--greyBg);
+                        padding: 5px 10px;
+                        color: var(--HoverColor);
+                        border-radius: 3rem;
+                        font-weight: 600;
+                        font-size: 13px;
+
+
+                    }
+                }
+
+                .amenities {
+                    flex-wrap: wrap;
+                    width: 100%;
+                    padding: 0;
+                    justify-content: center;
+                    gap: .5rem;
+
+                    .singleAmentity {
+                        padding: 1px 10px;
+                        background-color: var(--greyBg);
+                        border-radius: 5px;
+                        width: 6rem;
+
+                    }
+                }
+
+                .singleAmentity {
+                    padding: 10px;
+                    border-radius: 5px;
+                    justify-content: space-evenly;
+                    color: var(--blackColor);
+
+                    .icon {
+                        font-size: 1.5rem;
+
+                    }
+                }
+
+                .btn {
+                    color: var(--whiteColor);
+                    gap: 3.5rem;
+                    width: 100%;
+                    padding: .4rem;
+                    justify-content: center;
+                    font-weight: 600;
+                    text-align: center;
+                    // margin-top: 1rem;
+
+                    .icon {
+                        color: var(--whiteColor);
+
+                    }
+
+                    &:hover {
+                        background-color: var(--HoverColor);
+                    }
+                }
+            }
+
+        }
+    }
+}

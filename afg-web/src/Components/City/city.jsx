@@ -67,10 +67,6 @@ const city = () => {
               past and present.
             </p>
           </div>
-          <div data-aos="fade-up" className="iconsDiv flex">
-            {/* <BsArrowLeftShort className="icon" />
-            <BsArrowRightShort className="icon" /> */}
-          </div>
         </div>
         <div className="mainContent grid">
           {Data.map(({ id, img, location, grade, desTitle, des }) => {

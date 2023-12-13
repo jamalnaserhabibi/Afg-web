@@ -8,4 +8,116 @@
   --greyBg: hsl(0, 0%, 96%);
   --greyText: rgba(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
+}
+
+.secIntro {
+  flex-direction: column;
+  margin: 1rem;
+}
+.secIntro .secTitle {
+  color: var(--blackColor);
+  font-size: 2rem;
+}
+.secIntro .secText {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.tourist .secContainer .mainContent {
+  gap: 1rem;
+}
+.tourist .secContainer .mainContent .singleOffer {
+  box-shadow: 0 2px 14px 0 rgba(110, 110, 110, 0.314);
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.tourist .secContainer .mainContent .singleOffer .icon {
+  font-size: 30px;
+  color: var(--textColor);
+}
+.tourist .secContainer .mainContent .singleOffer small {
+  font-weight: 500;
+  color: var(--textColor);
+}
+.tourist .secContainer .mainContent .singleOffer .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.tourist .secContainer .mainContent .singleOffer img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tourist .secContainer .mainContent .singleOffer .location {
+  background-color: var(--PrimaryColor);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px 10px;
+  color: var(--whiteColor);
+  border-radius: 3rem;
+  font-weight: 500;
+  font-size: 13px;
+}
+.tourist .secContainer .mainContent .singleOffer:hover {
+  box-shadow: 0 2px 14px 0 rgba(110, 110, 110, 0.648);
+}
+.tourist .secContainer .mainContent .offerBody {
+  padding: 0.5rem 1rem;
+}
+.tourist .secContainer .mainContent .offerBody .price {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.tourist .secContainer .mainContent .offerBody .price h4 {
+  color: var(--blackColor);
+}
+.tourist .secContainer .mainContent .offerBody .price .status {
+  background-color: var(--greyBg);
+  padding: 5px 10px;
+  color: var(--HoverColor);
+  border-radius: 3rem;
+  font-weight: 600;
+  font-size: 13px;
+}
+.tourist .secContainer .mainContent .offerBody .amenities {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.tourist .secContainer .mainContent .offerBody .amenities .singleAmentity {
+  padding: 1px 10px;
+  background-color: var(--greyBg);
+  border-radius: 5px;
+  width: 6rem;
+}
+.tourist .secContainer .mainContent .offerBody .singleAmentity {
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  color: var(--blackColor);
+}
+.tourist .secContainer .mainContent .offerBody .singleAmentity .icon {
+  font-size: 1.5rem;
+}
+.tourist .secContainer .mainContent .offerBody .btn {
+  color: var(--whiteColor);
+  gap: 3.5rem;
+  width: 100%;
+  padding: 0.4rem;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+}
+.tourist .secContainer .mainContent .offerBody .btn .icon {
+  color: var(--whiteColor);
+}
+.tourist .secContainer .mainContent .offerBody .btn:hover {
+  background-color: var(--HoverColor);
 }/*# sourceMappingURL=tourist.css.map */
